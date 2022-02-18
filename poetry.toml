@@ -1,0 +1,3 @@
+[repositories]
+[repositories.indocresearch]
+url = "https://git.indocresearch.org/api/v4/projects/150/packages/pypi"

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "logger"
+version = "0.1.0"
+description = "Package for configuring and writing logs."
+authors = ["Indoc Research"]
+packages = [
+    { include = "logger" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-json-logger = "0.1.11"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.11.1"
+Faker = "^9.8.0"
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+addopts = "--cov logger --cov-report term"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
